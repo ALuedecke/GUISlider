@@ -1,0 +1,16 @@
+[
+    {
+        "bullet_tag":"<a href=\"#\" title=\":IMAGE_NAME:\"><span><img src=\"data/tooltips/:FILE_NAME:\" alt=\":IMAGE_NAME:\"/>:ID:</span></a>",
+        "image_tag":"<li><img src=\"data/images/:FILE_NAME:\" alt=\":IMAGE_NAME:\" title=\":IMAGE_NAME:\" id=\"wows1_:ID:\"/></li>",
+        "image_td_tag":"<td><img src=\"thumbs/brunch_2017/:FILE_NAME:\" alt=\":IMAGE_NAME:\" id=\":ID:\" onclick=\"handle_click(':ID:')\" /></td>",
+        "script_tag":"set_picture(:ID:, \"pictures/brunch_2017/:FILE_NAME:\");",
+        "output_file":[
+            "output/cube.html",
+            "output/album.html"
+        ],
+        "template_file":[
+            "template/cube.tmpl",
+            "template/album.tmpl"
+        ]
+    }
+]

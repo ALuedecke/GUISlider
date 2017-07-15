@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2016 ALuedecke
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+  <head>
+    <title>Album</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Generated with CreateSliderHtml by A. Luedecke 09/2016" />
+    <link rel="stylesheet" type="text/css" href="scripts/album_style.css" />
+  </head>
+  <body>
+    <div>
+      <table id="tbl_album">
+:TABLE_TAGS:
+	  </table>
+    </div id="cont_album">
+    <!-- Modal Image Zoom -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="$('#myModal').css('display', 'none');">
+        <img id="imgClose" alt="x" src="res/close.png" />
+      </span>
+      <span class="prev" onclick="handle_prev();">
+        <img id="imgPrev" alt=">" src="res/prev.png" />
+      </span>
+      <span class="next" onclick="handle_next();">
+        <img id="imgNext" alt=">" src="res/next.png" />
+      </span>
+      <img class="modal-content" id="imgModal" />
+      <div id="caption"></div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/album_jq.js"></script>
+    <script type="text/javascript" src="scripts/no_context.js"></script>
+    <script type="text/javascript">
+      :SCRIPT:      
+    </script>
+  </body>
+</html>

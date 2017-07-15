@@ -1,0 +1,7 @@
+# Pathes
+build/
+test/
+
+# Files
+build.xml
+*.mf
