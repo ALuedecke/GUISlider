@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2016 ALuedecke
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+  <head>
+    <title>Album</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Generated with CreateSliderHtml by A. Luedecke 09/2016" />
+    <link rel="stylesheet" type="text/css" href="scripts/album_style.css" />
+  </head>
+  <body>
+    <div>
+      <table id="tbl_album">
+        <tr>
+          <td><img src="thumbs/brunch_2017/NeueMitglieder1.jpg" alt="NeueMitglieder1" id="0" onclick="handle_click('0')" /></td>
+          <td><img src="thumbs/brunch_2017/NeueMitglieder2.jpg" alt="NeueMitglieder2" id="1" onclick="handle_click('1')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0034.JPG" alt="DSCI0034" id="2" onclick="handle_click('2')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0035.JPG" alt="DSCI0035" id="3" onclick="handle_click('3')" /></td>
+        </tr>
+        <tr>
+          <td><img src="thumbs/brunch_2017/DSCI0036.JPG" alt="DSCI0036" id="4" onclick="handle_click('4')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0037.JPG" alt="DSCI0037" id="5" onclick="handle_click('5')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0038.JPG" alt="DSCI0038" id="6" onclick="handle_click('6')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0039.JPG" alt="DSCI0039" id="7" onclick="handle_click('7')" /></td>
+        </tr>
+        <tr>
+          <td><img src="thumbs/brunch_2017/DSCI0040.JPG" alt="DSCI0040" id="8" onclick="handle_click('8')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0041.JPG" alt="DSCI0041" id="9" onclick="handle_click('9')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0049.JPG" alt="DSCI0049" id="10" onclick="handle_click('10')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0043.JPG" alt="DSCI0043" id="11" onclick="handle_click('11')" /></td>
+        </tr>
+        <tr>
+          <td><img src="thumbs/brunch_2017/DSCI0042.JPG" alt="DSCI0042" id="12" onclick="handle_click('12')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0044.JPG" alt="DSCI0044" id="13" onclick="handle_click('13')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0045.JPG" alt="DSCI0045" id="14" onclick="handle_click('14')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0046.JPG" alt="DSCI0046" id="15" onclick="handle_click('15')" /></td>
+        </tr>
+        <tr>
+          <td><img src="thumbs/brunch_2017/DSCI0048.JPG" alt="DSCI0048" id="16" onclick="handle_click('16')" /></td>
+          <td><img src="thumbs/brunch_2017/DSCI0050.JPG" alt="DSCI0050" id="17" onclick="handle_click('17')" /></td>
+          <td></td>
+          <td></td>
+        </tr>
+	  </table>
+    </div id="cont_album">
+    <!-- Modal Image Zoom -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="$('#myModal').css('display', 'none');">
+        <img id="imgClose" alt="x" src="res/close.png" />
+      </span>
+      <span class="prev" onclick="handle_prev();">
+        <img id="imgPrev" alt=">" src="res/prev.png" />
+      </span>
+      <span class="next" onclick="handle_next();">
+        <img id="imgNext" alt=">" src="res/next.png" />
+      </span>
+      <img class="modal-content" id="imgModal" />
+      <div id="caption"></div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/album_jq.js"></script>
+    <script type="text/javascript" src="scripts/no_context.js"></script>
+    <script type="text/javascript">
+      set_picture(0, "pictures/brunch_2017/NeueMitglieder1.jpg");
+      set_picture(1, "pictures/brunch_2017/NeueMitglieder2.jpg");
+      set_picture(2, "pictures/brunch_2017/DSCI0034.JPG");
+      set_picture(3, "pictures/brunch_2017/DSCI0035.JPG");
+      set_picture(4, "pictures/brunch_2017/DSCI0036.JPG");
+      set_picture(5, "pictures/brunch_2017/DSCI0037.JPG");
+      set_picture(6, "pictures/brunch_2017/DSCI0038.JPG");
+      set_picture(7, "pictures/brunch_2017/DSCI0039.JPG");
+      set_picture(8, "pictures/brunch_2017/DSCI0040.JPG");
+      set_picture(9, "pictures/brunch_2017/DSCI0041.JPG");
+      set_picture(10, "pictures/brunch_2017/DSCI0049.JPG");
+      set_picture(11, "pictures/brunch_2017/DSCI0043.JPG");
+      set_picture(12, "pictures/brunch_2017/DSCI0042.JPG");
+      set_picture(13, "pictures/brunch_2017/DSCI0044.JPG");
+      set_picture(14, "pictures/brunch_2017/DSCI0045.JPG");
+      set_picture(15, "pictures/brunch_2017/DSCI0046.JPG");
+      set_picture(16, "pictures/brunch_2017/DSCI0048.JPG");
+      set_picture(17, "pictures/brunch_2017/DSCI0050.JPG");      
+    </script>
+  </body>
+</html>
