@@ -86,7 +86,7 @@ public class MainWindow extends javax.swing.JFrame {
         cmbTemplate = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Create Slider HTML");
+        setTitle("Generate Album- / Slider Cube HTML Page   -   Version 1.0.0");
         setIconImage(java.awt.Toolkit.getDefaultToolkit().getImage("res/cube.jpg"));
 
         mainPanel.setBackground(new java.awt.Color(204, 204, 204));
